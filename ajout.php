@@ -605,6 +605,7 @@
                                     <option value="2">Two</option>
                                     <option value="3">Three</option>
                                     <option value="3">Three</option>
+                                    <option value="3">Three</option>
                                 </select>
                               </div>
                                 </div>
