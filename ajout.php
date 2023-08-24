@@ -539,7 +539,7 @@
 
             <div class="row clearfix row-deck">
                 <div class="d-flex">
-                    <a href="ajout.php">   <button type="button" class="btn btn-outline-primary mr-2"> <i class="fa fa-send"></i>Ajouter une operation </button></a>
+                    <button type="button" class="btn btn-outline-primary mr-2"><i class="fa fa-send"></i>Ajouter une operation</button>
                     <button type="button" class="btn btn-outline-primary mr-2"><i class="fa fa-send"></i>Ajouter un type operation</button>
                     <button type="button" class="btn btn-outline-primary mr-2"><i class="fa fa-send"></i>Ajouter provenance montant</button>
                     <button type="button" class="btn btn-outline-primary mr-4"><i class="fa fa-send"></i>Ajouter un type montant</button>
@@ -553,219 +553,82 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="header">
-                            <h2>Liste des operations</h2>
+                            <h2>Ajout d'une operation</h2>
                         </div>
+                        <div class="row clearfix">
+                <div class="col-md-12">
+                    <div class="card">
+                        
                         <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-hover mb-0 c_list">
-                                    <thead>
-                                        <tr>
-                                            <th>
-                                                <label class="fancy-checkbox">
-                                                    <input class="select-all" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </th>
-                                            <th>Name</th>                                    
-                                            <th>Phone</th>                                    
-                                            <th>Address</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                        <tbody>
-                                        <tr>
-                                            <td style="width: 50px;">
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <img src="assets/images/xs/avatar1.jpg" class="rounded-circle avatar" alt="">
-                                                <p class="c_name">Robert Hammer <span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
-                                            </td>
-                                            <td>
-                                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-2583</span>
-                                            </td>                                   
-                                            <td>
-                                                <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
-                                            </td>
-                                            <td>                                            
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <img src="assets/images/xs/avatar3.jpg" class="rounded-circle avatar" alt="">
-                                                <p class="c_name">Orlando Lentz <span class="badge badge-info m-l-10 hidden-sm-down">Google</span></p>
-                                            </td>
-                                            <td>
-                                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-5689</span>
-                                            </td>                                    
-                                            <td>
-                                                <address><i class="zmdi zmdi-pin"></i>44 Shirley Ave. West Chicago, IL 60185</address>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <img src="assets/images/xs/avatar9.jpg" class="rounded-circle avatar" alt="">
-                                                <p class="c_name">Frank Camly</p>
-                                            </td>
-                                            <td>
-                                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-9999</span>
-                                            </td>
-                                            <td>
-                                                <address><i class="zmdi zmdi-pin"></i>123 6th St. Melbourne, FL 32904</address>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <label class="fancy-checkbox">
-                                                    <input class="checkbox-tick" type="checkbox" name="checkbox">
-                                                    <span></span>
-                                                </label>
-                                            </td>
-                                            <td>
-                                                <img src="assets/images/xs/avatar10.jpg" class="rounded-circle avatar" alt="">
-                                                <p class="c_name">Brian Swader<span class="badge badge-default m-l-10 hidden-sm-down">Family</span></p>
-                                            </td>
-                                            <td>
-                                                <span class="phone"><i class="zmdi zmdi-phone m-r-10"></i>264-625-1212</span>
-                                            </td>
-                                            <td>
-                                                <address><i class="zmdi zmdi-pin"></i>70 Bowman St. South Windsor, CT 06074</address>
-                                            </td>
-                                            <td>
-                                                <button type="button" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></button>
-                                                <button type="button" data-type="confirm" class="btn btn-danger js-sweetalert" title="Delete"><i class="fa fa-trash-o"></i></button>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                            <form id="basic-form" method="post" novalidate>
+                                
+                              <div class="form-group">
+                                <h6>Type encaissement</h6>
+                              <div class="input-group mb-3">
+                                
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                              </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Libellé</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                <h6>Type montant</h6>
+                              <div class="input-group mb-3">
+                                
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                              </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Montant</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                <h6>Provenance montant</h6>
+                              <div class="input-group mb-3">
+                                
+                                <select class="custom-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                              </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                               
+                               
+                                
+                                
+                                <br>
+                                <button type="submit" class="btn btn-primary">Validate</button>
+                            </form>
                         </div>
+                    </div>
+                </div>
+                
+            </div>
                     </div>
                 </div>
             </div>
 
-            <!--<div class="row clearfix row-deck">
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Use by Device</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another Action</a></li>
-                                        <li><a href="javascript:void(0);">Something else</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div id="Use-by-Device" style="height: 16rem"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Use by Audience</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another Action</a></li>
-                                        <li><a href="javascript:void(0);">Something else</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <div id="Use-by-Audience" style="height: 16rem"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>Use by Browser</h2>
-                            <ul class="header-dropdown">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another Action</a></li>
-                                        <li><a href="javascript:void(0);">Something else</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <table class="table mb-0">
-                                <thead>
-                                    <tr>
-                                      <th>Browser</th>
-                                      <th>Sessions</th>
-                                      <th>Bounce rate</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Chrome</td>
-                                        <td>23,233 <i class="fa fa-level-up"></i></td>
-                                        <td>47.12%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Firefox</td>
-                                        <td>13,901 <i class="fa fa-level-up"></i></td>
-                                        <td>33.02%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Safari</td>
-                                        <td>3,015 <i class="fa fa-level-up"></i></td>
-                                        <td>24.12%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Edge</td>
-                                        <td>233 <i class="fa fa-level-down"></i></td>
-                                        <td>17.33%</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Opera</td>
-                                        <td>821 <i class="fa fa-level-down"></i></td>
-                                        <td>7.12%</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
+            
+            </div>
         </div>
     </div>
     
